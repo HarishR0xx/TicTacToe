@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7E4B8B">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Is the Winner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textColor="#fbf1f9"
+            android:textSize="40dp"
+            android:id="@+id/winner"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/winner"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shape1"
+            android:text="Replay"
+            android:textColor="#7E4B8B"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/replay"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape1"
+            android:text="Home"
+            android:textColor="#7E4B8B"/>
+
+    </RelativeLayout>
+</RelativeLayout>

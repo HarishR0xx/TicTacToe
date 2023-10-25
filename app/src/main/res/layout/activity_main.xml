@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#7E4B8B">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textSize="45dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fbf1f9"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:id="@+id/input">
+
+        <EditText
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawablePadding="15dp"
+            android:id="@+id/player1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape"
+            android:backgroundTint="#fbf1f9"
+            android:hint="Enter player 1's name"
+            android:padding="10dp"
+            android:textColorHint="#7E4B8B"
+            android:textSize="20dp"
+            tools:ignore="HardcodedText,RtlHardcoded"
+            android:textColor="#7E4B8B"
+            />
+
+        <EditText
+            android:drawableLeft="@drawable/baseline_person_2_24"
+            android:drawablePadding="15dp"
+            android:id="@+id/player2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape"
+            android:backgroundTint="#fbf1f9"
+            android:hint="Enter player 2's name"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:layout_below="@id/player1"
+            android:layout_marginTop="50dp"
+            android:textColorHint="#7E4B8B"
+            tools:ignore="HardcodedText"
+            android:textColor="#7E4B8B"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:layout_below="@id/input"
+        android:backgroundTint="#f8ccf9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/play"
+        android:theme="@style/Theme.Material3.Dark.NoActionBar"
+        android:textColor="#7E4B8B"
+        />
+
+</RelativeLayout>
